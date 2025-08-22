@@ -7,9 +7,10 @@ import pygame
 
 t = 0
 
+
 def set():
     global t
-    rem = sd.askstring(title='Время напоминания', prompt='Введите время напоминания в формате ЧЧ:ММ ( в 24 часовом формате)')
+    rem = sd.askstring(title='Время напоминания', prompt='Введите время напоминания в формате ЧЧ:ММ (в 24 часовом формате)')
     if rem:
         try:
             hour = int(rem.split(':')[0])
@@ -36,7 +37,7 @@ def check():
 
 def play_snd():
     pygame.mixer.init()
-    pygame.mixer.music.load('reminder.mp3')
+    pygame.mixer.music.load('reminder.MP3')
     pygame.mixer.music.play()
 
 window = Tk()
