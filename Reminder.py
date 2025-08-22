@@ -49,7 +49,7 @@ def stop_music():
     if music:
         pygame.mixer.music.stop()
         music = False
-    Label.config(text='Установить новое напоминание')
+    label.config(text='Установить новое напоминание')
 
 window = Tk()
 window.title('Напоминание')
